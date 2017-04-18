@@ -69,7 +69,7 @@ public abstract class DynamicAtlas
 		get
 		{
 			// TODO: Change to any shader you use for sprites
-			return Shader.Find("Unlit/Color");
+			return Shader.Find("Unlit/Texture");
 		}
 	}
 
@@ -662,8 +662,8 @@ public abstract class DynamicAtlas
 
 		// The second triangle
 		triangles[i * 6 + 3] = i * 4 + 1;
-		triangles[i * 6 + 4] = i * 4 + 2;
-		triangles[i * 6 + 5] = i * 4 + 3;
+		triangles[i * 6 + 4] = i * 4 + 3;
+		triangles[i * 6 + 5] = i * 4 + 2;
 	}
 
 	/// <summary>
